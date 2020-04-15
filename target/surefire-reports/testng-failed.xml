@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="uk.co.barclays.testsuite.SearchTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyUserShouldNavigateToSearchFeature"/>
+        </methods>
+      </class> <!-- uk.co.barclays.testsuite.SearchTest -->
+      <class name="uk.co.barclays.testsuite.FindBranchTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyUserShouldNavigateToFindABranchFeature"/>
+        </methods>
+      </class> <!-- uk.co.barclays.testsuite.FindBranchTest -->
+      <class name="uk.co.barclays.testsuite.LoginTest">
+        <methods>
+          <include name="verifyUserShouldNavigateToLoginFeature"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- uk.co.barclays.testsuite.LoginTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
